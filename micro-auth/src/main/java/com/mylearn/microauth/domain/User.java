@@ -30,7 +30,7 @@ public class User implements UserDetails {
     private Boolean isEnabled;
 
     @OneToMany(mappedBy = "user",fetch = FetchType.EAGER)
-    private List<Authority> authorities;
+    private List<Authority> authorities = new ArrayList<>();
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

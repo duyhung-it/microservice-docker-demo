@@ -16,6 +16,7 @@
 
   <modules>
     <module>micro-auth</module>
+    <module>micro-util</module>
   </modules>
 
   <dependencies>
